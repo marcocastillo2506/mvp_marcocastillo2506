@@ -1,4 +1,4 @@
-# Project Name #
+# Contact List #
 
 <!--
 > This material was originally posted [here](http://www.quora.com/What-is-Amazons-approach-to-product-development-and-product-management). It is reproduced here for posterities sake.
@@ -17,19 +17,19 @@ Once the project moves into development, the press release can be used as a touc
  -->
 
 ## Heading ##
-  > Name the product in a way the reader (i.e. your target customers) will understand.
+  > Contact List.
 
 ## Sub-Heading ##
-  > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
+  > This app is to go ahead and insert your personal contact info in case someone loses your number,email,etc.
 
 ## Summary ##
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
+  > Replace contact information in case of extravasation .
 
 ## Problem ##
-  > Describe the problem your product solves.
+  > Gives you a list with contact information of an user
 
 ## Solution ##
-  > Describe how your product elegantly solves the problem.
+  > Replaces information.
 
 ## Quote from You ##
   > A quote from a spokesperson in your company.
