@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html ng-app>
+<html ng-app="myApp">
   <head>
     <meta charset="utf-8">
     <title>Contact List App</title>
@@ -9,9 +9,11 @@
   <body>
     <section class="hero is-primary">
       <div class="hero-body">
-        <div class="container">
+        <div class="container" ng-controller="AppCtrl">
           <h1 class = "title is-2">Contact List App</h1>
           <h2 class ="subtitle is-4">HolaCode Cohort1</h2>
+        </div>
+      </div>
 </section>
 <!-- colums----------------------------------------------------------------------------------------------->
 <div class="columns">
@@ -41,7 +43,6 @@
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
-
-</script>
+<script src="controllers/controller.js"></script>
   </body>
 </html>
