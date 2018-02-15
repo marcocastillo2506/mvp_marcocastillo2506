@@ -38,6 +38,15 @@
     <div class="card">
       <div class="car-content">
         <h1 class="title">Number</h1>
+
+     </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <div class="car-content">
+        <h1 class="title">Action</h1>
+
      </div>
     </div>
   </div>
@@ -46,6 +55,12 @@
 <div class="table__wrapper">
   <table class="table is-bordered pricing__table is-fullwidth">
     <tbody>
+      <tr>
+        <td><input class="form-control" ng-model = contact.name></td>
+        <td><input class="form-control" ng-model = contact.email></td>
+        <td><input class="form-control" ng-model = contact.number></td>
+        <td><button class="btn btn-primary" ng-click="addContact()">Add Contact</button></td>
+      </tr>
       <tr ng-repeat="person in contactlist">
         <td>{{person.name}}</td>
         <td>{{person.email}}</td>

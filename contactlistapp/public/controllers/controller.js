@@ -15,6 +15,8 @@ myApp.controller('AppCtrl',function($scope,$http){
     //content error
   });
 
-
+$scope.addContact =  function(){
+  console.log($scope.contact);
+}
 
 });
