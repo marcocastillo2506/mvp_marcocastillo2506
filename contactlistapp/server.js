@@ -11,8 +11,12 @@ app.get('/contactlist', function(req, res) {
 db.contactlist.find(function(err, docs){
   console.log(docs);
   res.json(docs);
-})
+  });
 
+});
+
+app.post('/contactlist',function(req, res){
+  console.log(req.body);
 });
 
 app.listen(3000);
