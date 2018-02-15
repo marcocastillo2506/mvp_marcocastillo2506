@@ -5,17 +5,19 @@
     <meta charset="utf-8">
     <title>Contact List App</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <section class="hero is-primary">
       <div class="hero-body">
-        <div class="container" ng-controller="AppCtrl">
           <h1 class = "title is-2">Contact List App</h1>
           <h2 class ="subtitle is-4">HolaCode Cohort1</h2>
         </div>
       </div>
 </section>
 <!-- colums----------------------------------------------------------------------------------------------->
+<section ng-controller="AppCtrl">
 <div class="columns">
  <div class="column">
    <div class="card">
@@ -40,9 +42,20 @@
     </div>
   </div>
 </div>
+<!--  tables ------------------------------------------------------------------------------------------------->
+<div class="table__wrapper">
+  <table class="table is-bordered pricing__table is-fullwidth">
+    <tbody>
+      <tr ng-repeat="person in contactlist">
+        <td>{{person.name}}</td>
+        <td>{{person.email}}</td>
+        <td>{{person.number}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</section>
 
-
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
 <script src="controllers/controller.js"></script>
   </body>
 </html>

@@ -1,6 +1,18 @@
-var app = angular.module("myApp",[]);
-app.controller("AppCtrl",function($scope){
+
+
+var myApp = angular.module("myApp",[]);
+myApp.controller('AppCtrl',['$scope','$http',function($scope,$http){
   console.log("Testing controller");
+
+  $http({
+    method:'GET',
+    url:'/'
+  }).then(function successCallback(response){
+    console.log("I got the data i requested");
+    //$scope.contactlist = response.data;
+  },function errorCallback(response){
+    //content error
+  });
 
   person1 = {
     name: "Marco",
@@ -16,10 +28,10 @@ app.controller("AppCtrl",function($scope){
 
   person3 = {
     name:"Alexis",
-    email:"alexisgonzales0101",
+    email:"alexisgonzales0101@gmail.com",
     number: 5558971521
   };
-
   var contactlist = [person1, person2, person3];
+  $scope.contactlist = contactlist;
 
-})
+}]);
